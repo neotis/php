@@ -21,8 +21,7 @@ class Kernel
 
     public static function getInstance(): Kernel
     {
-        if (self::$instance)
-        {
+        if (empty(self::$instance)) {
             self::$instance = new Kernel();
         }
         return self::$instance;

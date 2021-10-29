@@ -6,7 +6,7 @@ trait bootstrap
 {
     private function bootstrapDirectories()
     {
-        $directories = Methods::directories(APP_PATH . 'bootstrap');
+        $directories = $this->fileSystem->directories(APP_PATH . 'bootstrap');
         print_r($directories);
         die;
     }

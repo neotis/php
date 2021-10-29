@@ -17,7 +17,7 @@ define('DS', DIRECTORY_SEPARATOR);
 
 $dependencies = APP_PATH . 'vendor/autoload.php';
 if (!file_exists($dependencies))
-    exit('Dependencies directory is not exist! (Run "composer install" in root directory)');
+    throw new Exception('Dependencies directory is not exist! (Run "composer install" in root directory)');
 require_once($dependencies);
 
 $kernel = Kernel::getInstance();
