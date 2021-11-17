@@ -6,7 +6,9 @@
     "license": "MIT",
     "require": {
         "ext-json": "*",
-        "neotis/filesystem": "^1.0"
+        "neotis/exception": "^1.0",
+        "neotis/filesystem": "^1.0",
+        "neotis/kernel": "^1.0.x-dev"
     },
     "require-dev": {
         "phpunit/phpunit": "^9.4",
